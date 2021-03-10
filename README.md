@@ -19,8 +19,9 @@ Export a `getStaticProps` or `getServerSideProps` function from your page that i
 ```ts
 import { composeProps } from "next-compose-props";
 
-export const getStaticProps = composeProps(foo, bar, baz)
+export const getStaticProps = composeProps(foo, bar, baz);
 ```
+
 You supply any number of async functions that return props. These are the same function that you would normally return, and the page context is passed to each one.
 
 ```ts
@@ -42,7 +43,7 @@ export const getBar: GetStaticProps = async () => {
 
   return {
     props: {
-      bar
+      bar,
     },
   };
 };
@@ -56,17 +57,10 @@ import { composeProps } from "next-compose-props";
 import { getFoo, getBar } from "lib/api";
 
 function Page({ foo, bar }) {
-  return (
-    <main>
-      {/* Use props like usual */}
-    </main>
-  );
+  return <main>{/* Use props like usual */}</main>;
 }
 
-export const getStaticProps = composeProps(
-  getFoo,
-  getBar,
-);
+export const getStaticProps = composeProps(getFoo, getBar);
 
 export default Page;
 ```
@@ -85,10 +79,10 @@ export const getFoo: GetStaticProps = async ({ params }) => {
   if (!foo) {
     return {
       redirect: {
-        destination: '/',
+        destination: "/",
         permanent: false,
       },
-    }
+    };
   }
 
   return {
