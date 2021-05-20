@@ -1,6 +1,6 @@
 {
   "name": "next-compose-props",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Next.js pageProps composer",
   "author": "Cabe Branson",
   "repository": "github:bitmap/next-compose-props",
