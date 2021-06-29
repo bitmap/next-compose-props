@@ -5,8 +5,8 @@
   "author": "Cabe Branson",
   "repository": "github:bitmap/next-compose-props",
   "license": "MIT",
-  "main": "dist/composeProps.js",
-  "types": "dist/composeProps.d.ts",
+  "main": "dist/compose-props.js",
+  "types": "dist/compose-props.d.ts",
   "files": [
     "dist"
   ],
