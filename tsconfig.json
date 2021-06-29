@@ -14,7 +14,7 @@
     "declaration": true,
   },
   "include": [
-    "src/composeProps.ts"
+    "src/compose-props.ts"
   ],
   "exclude": [
     "node_modules"
