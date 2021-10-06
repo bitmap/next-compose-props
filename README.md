@@ -1,5 +1,7 @@
 # next-compose-props
 
+[![npm version](https://img.shields.io/npm/v/next-compose-props.svg?style=flat-square)](https://npmjs.org/package/next-compose-props 'View this project on npm')
+
 Compose multiple Next.js `getStaticProps` or `getServerSideProps` functions.
 
 ## Install
